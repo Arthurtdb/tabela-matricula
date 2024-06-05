@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prova De Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<center>
+  <h1>Prova De Web - 2º Bimestre</h1>
+</center>
+<ul>
+<li>Arthur Pereira Leite</li>
+  
+    <li>Turma: CC1MB</li>
+    <li>Semestre: 1º</li>
+    <li>Data: 05/06/2024</li>
+  </ul>
+
+
+  <form id="form-notas">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="matricula">Matrícula:</label>
+    <input type="text" id="matricula" name="matricula" required><br><br>
+
+    <label for="nota1">1º Bimestre:</label>
+    <input type="text" id="nota1" name="nota1" required><br><br>
+
+    <label for="nota2">2º Bimestre:</label>
+    <input type="text" id="nota2" name="nota2" required><br><br>
+<center>
+    <button type="button" onclick="registrarNotas()">Registrar</button>
+  </form>
+</center>
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Matrícula</th>
+        <th>Nota 1</th>
+        <th>Nota 2</th>
+        <th>Média</th>
+        <th>Situação</th>
+      </tr>
+    </thead>
+    <tbody id="tabela-notas">
+    </tbody>
+  </table>
+<center>
+  <button type="button" onclick="limparTabela()">Limpar Tabela</button>
+</center>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
